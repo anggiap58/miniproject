@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./img/revo.png" alt="revou-logo"></div>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Our Profile</a>
+            <a class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+            </nav>        
+        </div>
+    </header>
+    <section class="banner">
+        <div class="greetings">
+        <h1>Hi Anggi, Welcome to website</h1>
+        <p>Ini adalah website latihan pertama</p> 
+    </div>
+    </section>
+    <section class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class="circle">Jakarta</div>
+            <div class="circle1">Bandung</div>
+            <div class="circle2">Surabaya</div>
+        </div>
+    </section>
+    <section id="message-us" class="form">
+        <div class="form-left">
+            <form>
+                <table>
+                    <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                    <input id="nama" name="nama" type="text" placeholder="nama">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                    <input id="tanggal_lahir" type="date" />
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input id="lakilaki" type="radio" id="lakilaki" name="jenkel" value="Laki-laki"/>
+                        <label for="lakilaki">Laki-laki</label>
+                        <input id="perempuan" type="radio" id="perempuan" name="jenkel" value="Laki-laki"/>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td>
+                        <textarea id="pesan" rows="8" cols="40">Ketik pesan</textarea>
+                        </td>
+                        </tr>
+                </table>
+            </form>
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </section>
+    <footer class="footer">
+        <center>
+        <p class="footer-text">made by anggiap © 2023 </p>
+    </center>
+    </footer>
+    <script src="./js/script.js"></script>
+    </body>
+</html>

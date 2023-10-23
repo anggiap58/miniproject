@@ -1,0 +1,89 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+    border-bottom: 1px solid gray;
+    background-color: #12296C;
+    }
+.nav-logo img{
+    max-height: 40px;
+}
+.nav{
+    display: flex;
+    }
+.nav-item{
+    padding: 5px 5px;
+    background: #FBDA03;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    }
+.nav-item:hover{
+    background: black;
+    color: yellow;
+}
+.greetings{
+    padding-top: 2em;
+    padding-left: 3px;
+    text-align: center;
+}
+.banner{
+    border-bottom: 1px solid gray;
+    background-image: url('../img/923.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.headquarters{
+    padding: 5em;
+    text-align: center;
+    color: yellow;
+    background-color: #12296C;
+}
+.circle{
+    height:150px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url('../img/jkt.jpg');
+    text-align: center;
+    padding: 10px;
+}
+.circle1{
+    height:150px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url('../img/bdg.jpg');
+    text-align: center;
+    padding: 10px;
+ }
+ .circle2{
+    height:150px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url('../img/sby.jpg');
+    text-align: center;
+    padding: 10px;
+ }
+.hq-items{
+    display: flex;
+    justify-content: space-around;
+}
+.form{
+    background-color: #FBDA03;
+}
+.footer-text{
+    font-size:small;
+    color: gray;
+    background-color: #12296C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
