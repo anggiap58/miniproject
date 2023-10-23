@@ -20,8 +20,9 @@
     </header>
     <section class="banner">
         <div class="greetings">
-        <h1>Hi Anggi, Welcome to website</h1>
+        <h1>Hi <span id="username">Anggi</span>, Welcome to website</h1>
         <p>Ini adalah website latihan pertama</p> 
+        <script src="js/script.js"></script>
     </div>
     </section>
     <section class="headquarters">
@@ -34,29 +35,29 @@
     </section>
     <section id="message-us" class="form">
         <div class="form-left">
-            <form>
-                <table>
+            <form name="message-form" onsumbit="return validateForm()">
+               <table>
                     <tr>
                     <td>Nama</td>
                     <td>:</td>
                     <td>
-                    <input id="nama" name="nama" type="text" placeholder="nama">
+                    <input required name="nama" type="text" placeholder="Nama">
                     </td>
                     </tr>
                     <tr>
                     <td>Tanggal Lahir</td>
                     <td>:</td>
                     <td>
-                    <input id="tanggal_lahir" type="date" />
+                    <input type="date" name="birthdate"/>
                     </td>
                     </tr>
                     <tr>
                     <td>Jenis Kelamin</td>
                     <td>:</td>
                     <td>
-                        <input id="lakilaki" type="radio" id="lakilaki" name="jenkel" value="Laki-laki"/>
+                        <input id="lakilaki" type="radio" name="jenkel" value="Laki-laki"/>
                         <label for="lakilaki">Laki-laki</label>
-                        <input id="perempuan" type="radio" id="perempuan" name="jenkel" value="Laki-laki"/>
+                        <input id="perempuan" type="radio" name="jenkel" value="perempuan"/>
                         <label for="perempuan">Perempuan</label>
                     </td>
                     </tr>
@@ -64,12 +65,19 @@
                         <td>Pesan</td>
                         <td>:</td>
                         <td>
-                        <textarea id="pesan" rows="8" cols="40">Ketik pesan</textarea>
+                        <textarea name="messages" id="pesan" rows="8" cols="40">Ketik pesan</textarea>
                         </td>
                         </tr>
                 </table>
+                <input class="submit" type="submit" value="Submit">
             </form>
-            <input class="submit" type="submit" value="Submit">
+            
+        </div>
+        <div class="form-right">
+            <p>Nama: <span id=sender-fullname"></span></p>
+            <p>Tanggal Lahir: <span id=sender-birthdate"></span></p>
+            <p>Jenis Kelamin: <span id=sender-gender"></span></p>
+            <p>Pesan: <span id=sender-messages"></span></p>
         </div>
     </section>
     <footer class="footer">
